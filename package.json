@@ -2,7 +2,7 @@
     "name": "hello",
     "main": "index.js",
     "scripts": {
-        "start": "micro"
+        "start": "micro -l tcp:\/\/104.224.150.203"
     },
     "dependencies": {
         "micro": "^9.3.3"
