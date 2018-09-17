@@ -12,9 +12,9 @@ var senecaWebConfig = {
 var app = Express()
     .use(require('body-parser').json())
     .use(context)
-    .listen(3000)
+    .listen(3000, '104.224.150.203')
 
 var seneca = require('seneca')()
     .use(SenecaWeb, senecaWebConfig)
     .use('api')
-    .client({ type: 'tcp', pin: 'role:math' })
+    .client({ type: 'tcp', pin: 'role:math', host: '104.224.150.203' })
