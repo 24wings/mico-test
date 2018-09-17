@@ -2,9 +2,10 @@
     "name": "hello",
     "main": "index.js",
     "scripts": {
-        "start": "micro -l tcp:\/\/104.224.150.203"
+        "start": "node index.js"
     },
     "dependencies": {
-        "micro": "^9.3.3"
+        "micro": "^9.3.3",
+        "seneca": "^3.7.0"
     }
 }
